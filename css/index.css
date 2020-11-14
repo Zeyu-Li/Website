@@ -1,0 +1,127 @@
+/* HTML elements */
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Spacing */
+.footer-note {
+    max-width: 960px;
+}
+
+/* Transition */
+.smooth, #smooth, .backtotop, .bottom>li>a, .navbar-brand, .active:hover, .nav-item {
+    transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+}
+
+/* NavLink (tabs) */
+.nav-link {
+    font-size: 1.1em;
+}
+.nav-link:hover {
+    color: #fff!important;
+}
+.navbar-brand:hover, .active:hover {
+    color: rgba(255,255,255,.65)!important;
+}
+.navbar-toggler {
+    border-color: rgba(255,255,255,.5)!important;
+}
+
+/* Banner Img */
+.banner {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/background.jpg");
+    margin-top: 56px;
+    margin-bottom: 150px;
+}
+#banner-txt {
+    height: 25vh !important;
+}
+
+/* Footer */
+.footer {
+    background-color: #181818;
+    width: 100%;
+    height: 210px;
+    margin-top: 175px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.footer-top {
+    position: relative;
+    max-width: 960px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-note {
+    position: relative;
+    font-size: 1.2em;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.backtotop {
+    float: right;
+    padding-right: 2px;
+    color: #fff;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #383838
+}
+
+.footer-bottom {
+    background: #141414;
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.bottom {
+    position: relative;
+    list-style: none;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    padding: 1vw 0;
+}
+.bottom > li {
+    display: inline-block;
+    padding-left: 2em;
+}
+.bottom > li:first-child {
+    padding-left: 0em;
+}
+.bottom > li > a {
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+.footer a:hover {
+    text-decoration: none !important;
+}
+
+.bottom>li>a:hover,
+.backtotop:hover {
+    color: rgba(145, 145, 145, 0.85);
+}
+/* end Footer */

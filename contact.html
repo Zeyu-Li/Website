@@ -10,11 +10,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Andrew's Profile | Home</title>
+    <title>Andrew's Profile | Contact</title>
 
     <meta name="author" content="Andrew Li">
     <meta name="description" content="Andrew Li's personal profile website. Contains resume and other coding projects.">
     <meta name="keywords" content="andrew li, website, code, coding, profile">
+    <meta property="og:image" content="img/ico.svg">
 
     <!-- Mini icon on tab -->
     <link rel="icon" href="img/ico.svg" type="image/ico">
@@ -43,18 +44,18 @@
 
     <!-- Bootstrap navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="index.html"><img src="img/ico.svg" width="30" height="30"
-                class="d-inline-block align-top img-fluid hoverable" alt="Circuit Logo"> Andrew's Profile</a>
+        <a class="navbar-brand" href="index.html" title="Home"><img src="img/ico.svg" width="30" height="30"
+                class="d-inline-block align-top img-fluid hoverable" alt="Circuit Logo" > Andrew's Profile</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="index.html">Home</a>
                 <a class="nav-item nav-link" href="projects.html">Projects</a>
                 <a class="nav-item nav-link" href="pdf/resume.pdf">Resume</a>
-                <a class="nav-item nav-link" href="contact.html">Contact</a>
+                <a class="nav-item nav-link active" href="#">Contact<span class="sr-only">(current)</span></a>
             </div>
         </div>
     </nav>
@@ -64,21 +65,30 @@
     
     <!-- Banner -->
     <div class="banner container-fluid">
-        <h1 id="banner-txt">Andrew's Contact</h1>
+        <img class="img-fluid banner-image" alt="Logo banner">
     </div>
     <!-- End of Banner -->
 
-    <div>
-        <!-- if JavaScript is not enabled -->
-        <noscript>Enable JavaScript to run this app properly. 😞</noscript>
-    </div>
+    <main>
+        <div class="main">
+            <h1 class="main-title">Andrew's Contact</h1>
+            <!-- if JavaScript is not enabled -->
+            <noscript>Enable JavaScript to run this app properly. 😞</noscript>
+            <p>Email: <a id="contact" href="mailto: zeyu.li23@gmail.com">zeyu.li23@gmail.com</a></p>
+            <p>GitHub: <a id="contact" href="https://github.com/Zeyu-Li" target="_blank">github.com/Zeyu-Li</a></p>
+            <p>LinkedIn: <a id="contact" href="https://www.linkedin.com/in/andrew-li23/" target="_blank">linkedin.com/in/andrew-li23/</a></p>
+            <p>Website: <a id="contact" href="https://zeyu-li.github.io/website/" target="_blank">zeyu-li.github.io/website/</a></p>
+            <br>
+        </div>
+
+    </main>
     <!-- End of Main -->
     
     <!-- footer -->
     <footer class="footer">
         <div class="footer-top">
             <p class="footer-note">&copy; 2020 Andrew Li. All Rights Reserved.
-                <a class="backtotop" href="#">&#9650; Back to top</a>
+                <a class="backtotop" href="#" title="Back to Top">&#9650; Back to top</a>
             </p>
         </div>
         <hr class="divider">
@@ -88,7 +98,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="pdf/resume.pdf">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </div>
     </footer>

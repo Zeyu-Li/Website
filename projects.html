@@ -30,6 +30,21 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        .markdown p {
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 0;
+        margin-right: 0;
+        }
+        .footer {
+            margin-top: 0;
+        }
+        .banner {
+            margin-bottom: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -63,9 +78,73 @@
 
     <!-- Main -->
     <main>
+        <!-- Banner -->
+        <div class="banner container-fluid">
+            <img class="img-fluid banner-image" alt="Logo banner">
+        </div>
+        <!-- End of Banner -->
+
+        <div class="project_sample">
+            <h1 class="main_h">Projects</h1>
+            
+            <!-- if JavaScript is not enabled -->
+            <noscript>Enable JavaScript to run this app properly. 😞</noscript>
+            <p style="max-width: 960px; margin: 0 auto;">A full list of projects can be found in bottom of the page or by clicking <a href="#github">here</a>. </p>
+            <div class="project"><br>
+                <div class="project-item">
+                    <h2>Project 1: Django Login</h2>
+                    <p>w/ Django + Bootstrap: <a class="text-muted">link</a> (not available due to high AWS EC2 costs)<br></p>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><a href="https://github.com/Zeyu-Li/django_ecommerce_app" target="_target"><img src="img/django1.jpg" title="Django Project"></a></div>
+                                <div class="swiper-slide"><a href="https://github.com/Zeyu-Li/django_ecommerce_app" target="_target"><img src="img/django2.jpg" title="Django Project"></a></div>
+                                <div class="swiper-slide"><a href="https://github.com/Zeyu-Li/django_ecommerce_app" target="_target"><img src="img/django3.jpg" title="Django Project"></a></div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                </div><p>Source Code <a href="https://github.com/Zeyu-Li/django_ecommerce_app">here</a></p><hr>
+
+                <div class="project-item">
+                    <h2>Project 2: Emoji Finder</h2>
+                    <p>Find the emoji you want <a href="https://zeyu-li.github.io/emojis-finder/build/index.html" target="_target" id="contact">here
+                        <br><img src="img/emoji.png" alt="emoji finder" title="image of emoji finding website"
+                            class="show-img"></a>. Made with React</p>
+                </div><hr>
+                <div class="project-item">
+                    <h2>Project 3: JS-HTML Canvas Chess game</h2>
+                    <p>w/ Pure JS; Play it now <a href="https://zeyu-li.github.io/chess/index.html" target="_target" id="contact">here
+                        <br><img src="img/chess.jpg" alt="chess game" title="image of chess JavaScript game"
+                            class="show-img"></a></p>
+                </div><hr>
+
+                <div class="project-item">
+                    <h2 id="game">Project 4: Soulless - Unity Game Jam</h2>
+                    <p>made with Unity at a 48h game jam - Play now below! If the following does not work, try on <a href="https://itch.io/embed-upload/2251772?color=fe5e5e">itch.io</a>
+                        <br><div class="embed-responsive embed-responsive-16by9"><iframe frameborder="0" src="https://itch.io/embed-upload/2251772?color=fe5e5e" allowfullscreen="" width="672" height="378"></iframe></div></p>
+                        <p>View the source code <a href="https://github.com/Zeyu-Li/Quarantined_Game_Jam">here</a></p>
+                </div><hr>
+                <div class="project-item">
+                    <h2 id="game2">Project 5: Unreal Tutorial</h2>
+                    <p>made with Unreal, download now for Windows on <a href="https://github.com/Zeyu-Li/Unreal-Tutorial/releases/tag/1.0.0.1">GitHub</a>
+                        <br><a href="https://github.com/Zeyu-Li/Unreal-Tutorial/tree/1.0.0.1#unreal-engine-4-tutorial"><img src="img/demo.gif" alt="Small demo of the game" title="Unreal Tutorial demo"
+                        class="show-img"></a></p>
+                        <p>View the tutorial <a href="https://github.com/Zeyu-Li/Unreal-Tutorial/tree/1.0.0.1#unreal-engine-4-tutorial">here</a></p>
+                </div>
+            </div>
+        </div>
 
     </main>
     <!-- End of Main -->
+    
+    <div class="blue" id="projects">
+        <h1 class="main_h" style="color: #fff;opacity: 1;">List of GitHub Projects</h1>
+        <a name="top"></a>
+        <div class="markdown" id="github"><script src="https://gist.github.com/Zeyu-Li/98cf78603c0134815d1d9dc2c12372d8.js"></script></div>
+    </div>
 
     <!-- footer -->
     <footer class="footer">
@@ -96,6 +175,44 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+    <script src="js/swiper.js"></script>
+
+    <!-- script for link targeting another page -->
+    <script>
+        $('.gist-file details a').attr('target', '_blank');
+        $('.gist-file #user-content-index').remove();
+        let min = false
+        
+        $(document).ready(function() {
+            $('.gist-file .markdown-body').children()[2].remove();
+            $('.gist-file .markdown-body').children()[2].remove();
+            let br1 = document.createElement("br")
+            let br2 = document.createElement("br")
+            let t = document.createElement("i")
+            t.innerHTML = "Click the header/title to expand or minimize section"
+            let a1 = document.createElement("a")
+            a1.href = "#user-content-all_r"
+            a1.innerHTML = "Jump to All repos"
+            let a2 = document.createElement("a")
+            a2.href = "#top"
+            a2.classList.add("min")
+            a2.innerHTML = "Minimize all"
+            $('.gist-file .markdown-body').children()[1].after(t,br1,a1,br2,a2);
+            
+            $(".min").click(()=> {
+                if (!min) {
+                    $('details').removeAttr("open")
+                    $(".min").html("Maximize all")
+                } else {
+                    $('details').attr("open", '')
+                    $(".min").html("Minimize all")
+                }
+                min = !min
+            })
+        });
+    </script>
+
 
 </body>
 

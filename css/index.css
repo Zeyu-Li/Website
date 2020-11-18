@@ -44,6 +44,8 @@ main p {
 
 /* Banner Img */
 .banner {
+    display: grid;
+    place-items: center;
     position: relative;
     background-attachment: fixed;
     background-position: center;
@@ -213,6 +215,10 @@ main p {
     .box {
         width: 90vw;
     }
+    /* cannot override */
+    .p-5 {
+        padding: 10px!important;
+    }
 }
 .icon {
     height: 25px;
@@ -234,6 +240,16 @@ main p {
 .project hr {
     width: 80vw;
     max-width: 960px;
+}
+@media only screen and (max-width: 900px) {
+    .project-item {
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+    .markdown {
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+    }
 }
 .markdown {
     padding-top: 8vh;

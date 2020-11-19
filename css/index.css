@@ -215,6 +215,10 @@ main p {
     .box {
         width: 90vw;
     }
+    .project-item p {
+        padding-left: 0;
+        padding-right: 4vw;
+    }
     /* cannot override */
     .p-5 {
         padding: 10px!important;

@@ -60,15 +60,15 @@
         </div>
     </nav>
     <!-- End Bootstrap navbar -->
+    
+    <div class="top">
+        <div class="block blue" style="opacity: .9">
+            <h1 class="code-title"><p class="typer"></p></h1>
+            <div class="centering"><a class="arrow" href="#about"></a></div>
+        </div>
+    </div>
 
     <main>
-        <div class="top">
-            <div class="block blue" style="opacity: .9">
-                <h1 class="code-title"><b>Andrew can <br>code</b> for you</h1>
-                <div class="centering"><a class="arrow" href="#about"></a></div>
-            </div>
-        </div>
-
         <div id="about" class="block about_me">
             <div class="inner">
                 <h1 class="main_h">About Me</h1>
@@ -234,7 +234,28 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
 
     <script src="js/swiper.js"></script>
+    <script>
+        $(document).ready(function() {
+            let words = ["frontend", "backend", "JavaScript", "Python", "for you"]
+            let delay_speed = 300
+            new TypeIt(".typer", {
+                speed: 50
+            })
+                .type("<b>Andrew can <br>code</b> "+words[0], {delay: 1000, speed: 35})
+                .delete(words[0].length, {delay: delay_speed, speed: 45})
+                .type(words[1], {delay: 1000})
+                .delete(words[1].length, {delay: delay_speed})
+                .type(words[2], {delay: 1000})
+                .delete(words[2].length, {delay: delay_speed})
+                .type(words[3], {delay: 1000})
+                .delete(words[3].length, {delay: delay_speed})
+                .type(words[4], {speed:100})
+                .go();
+                // <b>Andrew can <br>code</b> for you
+        })
+    </script>
 </body>
 </html>

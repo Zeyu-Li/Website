@@ -162,6 +162,7 @@ main p {
 .show-img {
     max-width: 100%;
     height: auto;
+    margin-top: 10px;
 }
 
 /* Cards */

@@ -1,8 +1,8 @@
-# Website
+# Website (Old)
 
-My new personal website!
+My old personal website... New one is @ [andrewli.site](https://andrewli.site)
 
-Now live @ [zeyu-li.github.io/website/](https://zeyu-li.github.io/website/)
+
 
 ## Libraries Used
 
@@ -11,3 +11,7 @@ Now live @ [zeyu-li.github.io/website/](https://zeyu-li.github.io/website/)
 * [popper.js](https://popper.js.org/)
 * [swiper.js](https://idangero.us/swiper/) *carousel
 * [TypeIt](https://typeitjs.com/)
+
+## Old Website Preview
+
+Although the new one is more recent the old one (current) is still up [here](https://zeyu-li.github.io/website/)

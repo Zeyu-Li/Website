@@ -30,6 +30,12 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script defer>
+        // alert
+        if (window.confirm('You are viewing an old website. The new one is @ https://andrewli.site. If you click "ok" you will be redirected to the new page, otherwise click cancel')) {
+            window.location.href='https://andrewli.site'
+        }
+    </script>
 </head>
 
 <body>
@@ -240,10 +246,6 @@
 
     <script src="js/swiper.js"></script>
     <script>
-        // alert
-        if (window.confirm('You are viewing an old website. The new one is @ https://andrewli.site. If you click "ok" you will be redirected to the new page, otherwise click cancel')) {
-            window.location.href='https://andrewli.site'
-        }
         $(document).ready(function() {
             let words = ["frontend", "backend", "JavaScript", "Python", "for you"]
             let delay_speed = 300

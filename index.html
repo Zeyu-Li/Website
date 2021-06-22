@@ -56,7 +56,7 @@
                 <a class="nav-item nav-link" href="projects.html">Projects</a>
                 <a class="nav-item nav-link" href="pdf/resume.pdf">Resume</a>
                 <a class="nav-item nav-link" href="contact.html">Contact</a>
-                <a class="nav-item nav-link" href="https://andrew-li-blog.vercel.app/">Blog</a>
+                <a class="nav-item nav-link" href="http://blog.andrewli.site/">Blog</a>
             </div>
         </div>
     </nav>
@@ -200,7 +200,7 @@
                     <p>📄 <b>Resume:</b> <a id="contact" target="_blank" href="pdf/resume.pdf">resume.pdf</a><br></p>
                     <p>📣 <b>Contact page:</b> link <a id="contact" target="_blank" href="contact.html">here</a></p>
                     <p>✉️ <b>Email:</b> <a id="contact" href="mailto: zeyu.li23@gmail.com">zeyu.li23@gmail.com</a></p>
-                    <p>📰 <b>Blog:</b> <a id="contact" href="https://andrew-li-blog.vercel.app/">andrew-li-blog.vercel.app</a></p><br>
+                    <p>📰 <b>Blog:</b> <a id="contact" href="http://blog.andrewli.site/">blog.andrewli.site</a></p><br>
                 </div>
             </div>
         </div>
@@ -221,7 +221,7 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="pdf/resume.pdf">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://andrew-li-blog.vercel.app/">Blog</a></li>
+                <li><a href="http://blog.andrewli.site/">Blog</a></li>
             </ul>
         </div>
     </footer>
@@ -240,6 +240,10 @@
 
     <script src="js/swiper.js"></script>
     <script>
+        // alert
+        if (window.confirm('You are viewing an old website. The new one is @ https://andrewli.site. If you click "ok" you will be redirected to the new page, otherwise click cancel')) {
+            window.location.href='https://andrewli.site'
+        }
         $(document).ready(function() {
             let words = ["frontend", "backend", "JavaScript", "Python", "for you"]
             let delay_speed = 300
